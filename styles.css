@@ -1,0 +1,58 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    z-index: 1; /* Ensure the title is above the video */
+    position: relative; /* Needed for z-index to work */
+}
+
+.first-block {
+    position: relative; /* Needed for positioning elements inside */
+}
+
+#myVideo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    z-index: -1;
+}
+
+.info-button {
+    position: absolute;
+    top: 80%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-20%, -50%);
+    z-index: 2; /* Ensure the button is above the video */
+}
+
+.begginerContainer{
+    
+    display: flex;
+}
+
+.info-begginer-container{
+    background-color: rgb(112, 218, 112);
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.info-advanced-container{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
